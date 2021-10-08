@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 15px 3px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+main {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.title-container {
+  text-align: center;
+}
+
+#title {
+  color: #333;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#subtitle {
+  margin-top: -20px;
+}
+
+.img-section {
+  background-color: #fff;
+  margin: -1rem 10px 0 10px;
+  text-align: center;
+}
+
+#img-caption {
+  margin-top: -2rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#tribute-info {
+  display: block;
+  /*   text-align: center; */
+}
+
+#tribute-info h3 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#tribute-info ul {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+blockquote {
+  max-width: 550px;
+  margin: 0 auto;
+}
