@@ -1,16 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
-    <title>My Project</title>
-</head>
-<body>
-    <h1>Project Starter</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,300i,700"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <title>Product Landing Page</title>
+  </head>
+  
+ <body>
+   <div class="page-wrapper">
+  <header id="header" class="navbar">
+    <div>
+      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo">
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#how">How It Works</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <h1>Handcrafted, home-made masterpieces</h1>
+    <input id="email" type="email" placeholder="Enter your email address" name="email" required>
+    <input id="submit" type="submit" value="Get Started"></input>
+  </form>
+  
+  <div class="main">
+    <section id="features">
+    <div class="container">
+      <div class="icon">
+        <i class="fa fa-fire"></i>
+      </div>
+      <div class="description">
+        <h2>Premium Materials</h2>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+      </div> 
+   </div>
+      
+    <div class="container">
+      <div class="icon">
+        <i class="fa fa-truck"></i>
+      </div>
+      <div class="description">
+        <h2>Fast Shipping</h2>
+        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div> 
+   </div>
     
-    <script src="script.js"></script>
-</body>
+    <div class="container">
+      <div class="icon">
+        <i class="fa fa-battery-full"></i>
+      </div>
+      <div class="description">
+        <h2>Quality Assurance</h2>
+        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+      </div> 
+   </div>
+  </section>
+    
+    <section id="how">
+      <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </section>
+    
+    <section id="pricing" class="pricing">
+       <div class="card">
+         <div class="card-header">
+           <h2>Tenor Trombone</h2>
+         </div>
+         <div class="card-body">
+           <h1>$600</h1>
+           <ul>
+             <li>Lorem ipsum.</li>
+             <li>Lorem ipsum.</li>
+             <li>Lorem ipsum dolor.</li>
+             <li>Lorem ipsum.</li>
+           </ul>
+           <button class="card-btn">Select</button>
+         </div>
+        </div>
+      
+        <div class="card">
+         <div class="card-header">
+           <h2>Bass Trombone</h2>
+         </div>
+         <div class="card-body">
+           <h1>$900</h1>
+           <ul>
+             <li>Lorem ipsum.</li>
+             <li>Lorem ipsum.</li>
+             <li>Lorem ipsum dolor.</li>
+             <li>Lorem ipsum.</li>
+           </ul>
+           <button class="card-btn">Select</button>
+          </div>
+         </div> 
+      
+         <div class="card">
+         <div class="card-header">
+           <h2>Valve Trombone</h2>
+         </div>
+         <div class="card-body">
+           <h1>$1200</h1>
+           <ul>
+             <li>Lorem ipsum.</li>
+             <li>Lorem ipsum.</li>
+             <li>Lorem ipsum dolor.</li>
+             <li>Lorem ipsum.</li>
+           </ul>
+           <button class="card-btn">Select</button>
+         </div>
+         </div>
+       </div>
+    </section>
+   
+   <div class="footer">
+     <div class="footer-links">
+       <ul>
+         <li><a href="#"> Privacy</a></li>
+         <li><a href="#"> Terms</a></li>
+         <li><a href="#"> Contact</a></li>
+       </ul>
+     </div>
+     <div class="copyrights">
+       <p>Copyright 2016, Original Trombones</p>
+     </div>
+   </div>
+   
+   </div>
+  
+ </body>
 </html>
