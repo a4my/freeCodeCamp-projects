@@ -1,71 +1,191 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-/* :root {
-    --main-white: #f0f0f0;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #303841;
-  } */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
-
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0; */
+  background-color: #303841;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* /////////////////
+/////HEADER / NAVBAR
+//////////////////*/
+
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #be3144;
+  /*   height: 7rem; */
+  width: 100vw;
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+nav ul li {
+  /*   margin-right: 4rem; */
+  list-style-type: none;
+}
+
+/* nav a:nth(3) {
+  margin-right: 4rem;
+} */
+
+.nav-links {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+  padding: 2.5rem 2rem;
+  display: block;
+}
+
+.nav-links:hover {
+  background-color: #45567d;
+}
+
+/* /////////////////
+///// SECTION-1 / HERO
+//////////////////*/
+
+#about {
+  height: 100vh;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100%;
+}
+
+.welcome-section h1 {
+  font-size: 5rem;
+}
+
+.welcome-section p {
+  color: #be3144;
+  font-size: 3rem;
+  font-weight: italic;
+}
+
+/* /////////////////
+/////SECTION / GRID
+//////////////////*/
+
+.projects {
+  background-color: #45567d;
+  padding: 10rem 2rem;
+}
+
+.projects h1 {
+  color: #fff;
+  font-size: 4rem;
+  max-width: 64rem;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto 6rem auto;
+  border-bottom: 2px solid #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.card {
+  background: #303841;
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  max-height: 40rem;
+  max-width: 40rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  background-color: #303841;
+  text-decoration: none;
+}
+
+/* /////////////////
+/////SECTION / CONTACT
+//////////////////*/
+
+#contact {
+  height: 100vh;
+}
+.hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+}
+
+.hero p {
+  font-size: 1.7rem;
+  line-height: 2.5;
+}
+
+.contact-links {
+  margin: 4rem 0 10rem 0;
+}
+
+.links {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin: 2rem;
+  font-size: 2.2rem;
+  transition: all 0.3s ease-out;
+}
+
+.links:hover {
+  transform: translateY(8px);
+}
+
+.footer {
+  height: 10rem;
+  border-top: 4px solid #be3144;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  font-size: 1.9rem;
 }
