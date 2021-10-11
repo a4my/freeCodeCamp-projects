@@ -96,6 +96,7 @@ nav ul li {
 .projects {
   background-color: #45567d;
   padding: 10rem 2rem;
+  text-align: center;
 }
 
 .projects h1 {
@@ -108,7 +109,7 @@ nav ul li {
   border-bottom: 2px solid #fff;
 }
 
-.grid {
+.project-tile {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
@@ -120,22 +121,42 @@ nav ul li {
 
 .card {
   background: #303841;
-  height: 100%;
-  width: 100%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: #fff;
 }
 
 .card img {
-  max-height: 40rem;
-  max-width: 40rem;
-  height: 100%;
+  height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.card {
-  background-color: #303841;
+.card p {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+  text-align: center;
+}
+
+.card span {
+  color: #303841;
+  padding: 0 0.8rem;
+  transition: all 0.3s ease-out;
+}
+
+.card p:hover span {
+  color: orange;
+}
+
+.btn {
+  display: inline-block;
   text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  background-color: #303841;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  border-radius: 3px;
 }
 
 /* /////////////////
@@ -188,4 +209,16 @@ nav ul li {
   align-items: center;
   color: #fff;
   font-size: 1.9rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  .footer {
+    font-size: 1.5rem;
+  }
+  .links {
+    font-size: 1.2rem;
+  }
 }
